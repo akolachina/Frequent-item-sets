@@ -5,9 +5,13 @@ Python code to build frequent item sets from a transactions database where each 
 
 
 clone the repo: git clone https://github.com/akolachina/Frequent-item-sets.git
+
 Open *"Frequent Itemsets-Ver4.ipynb"* in Jupyter Notebook
+
 Change the data set path to directory where you clone
+
 Change the final output path to directory where you clone
+
 Restart and run all cells
 
 
