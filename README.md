@@ -4,6 +4,22 @@ Python code to build frequent item sets from a transactions database where each 
 # Instructions to run the code
 
 
+clone the repo: git clone https://github.com/akolachina/Frequent-item-sets.git
+Open *"Frequent Itemsets-Ver4.ipynb"* in Jupyter Notebook
+Change the data set path to directory where you clone
+Change the final output path to directory where you clone
+Restart and run all cells
+
+
+
+# Efficiency considerations
+
+1.I read the entire data set into main memory to speed up the implementation. However, if the data set is huge, we could read one line at a time from disk, process to count frequency then go back and read next line.
+
+2.The time taken upto identification of frequent quadruples is within 3 mins on local machine. For five and over, it takes longer. The biggest time consumption here is to look through all candidate quads for each five group and check if they are a frequent quad. If we had a cluster and memory is not a constraint, this check could be avoided to speed up the algorithm.
+
+
+
 
 
 
@@ -35,12 +51,6 @@ I leveraged the apriori algorithm to implement frequent item set identification.
  3. Prune triples based on support_level, to get frequent triples
  and so on for higher levels
 
-
-# Efficiency considerations
-
-1.I read the entire data set into main memory to speed up the implementation. However, if the data set is huge, we could read one line at a time from disk, process to count frequency then go back and read next line.
-
-2.The time taken upto identification of frequent quadruples is within 3 mins on local machine. For five and over, it takes longer. The biggest time consumption here is to look through all candidate quads for each five group and check if they are a frequent quad. If we had a cluster and memory is not a constraint, this check could be avoided to speed up the algorithm.
 
 
 
