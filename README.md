@@ -12,6 +12,8 @@ Change the data set path to directory where you clone
 
 Change the final output path to directory where you clone
 
+Need to have pandas and numpy installed in python 3.
+
 Restart and run all cells
 
 **To run with a different support level:**
@@ -22,7 +24,7 @@ Restart and run all cells
 
 1.I read the entire data set into main memory to speed up the implementation. However, if the data set is huge, we could read one line at a time from disk, process to count frequency then go back and read next line.
 
-2.The time taken upto identification of frequent quadruples is within 3 mins on local machine. For five and over, it takes longer. The biggest time consumption here is to look through all candidate quads for each five group and check if they are a frequent quad. If we had a cluster and memory is not a constraint, this check could be avoided to speed up the algorithm.
+2.The time taken upto identification of frequent quadruples is within 3 mins on local machine. For five and over, it takes longer. Total time taken on my local machine with 32gb RAM is about 50 mins. The biggest time consumption here is to look through all candidate quads for each five group and check if they are a frequent quad. If we had a cluster and memory is not a constraint, this check could be avoided to speed up the algorithm.
 
 3. The code here is in a PoC mode, in the interest of time. If the code had to be productionized and scaled up to build frequent itemsets from bigger databases and of different support levels, I would 
 * use *itertools.combinations(candidate_list, itemset_size)* to replace the nested *for-loops* in identifying candidate tuples
