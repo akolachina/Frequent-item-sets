@@ -14,7 +14,9 @@ Change the final output path to directory where you clone
 
 Restart and run all cells
 
+**To run with a different support level:**
 
+ change the value of support_level = 4 to a new number and rerun all cells
 
 # Efficiency considerations
 
