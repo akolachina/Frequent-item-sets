@@ -9,10 +9,13 @@ clone the repo: git clone https://github.com/akolachina/Frequent-item-sets.git
 Open *"Frequent Itemsets-Ver4.ipynb"* in Jupyter Notebook
 
 Change the data set path to directory where you clone
-![](./Path_to_raw_dataset.PNG)
+
+<img src = "./Path_to_raw_dataset.PNG width = 20">
 
 Change the final output path to directory where you clone
-![](./Path_to_resultset.PNG)
+
+<img src = "./Path_to_resultset.PNG" width = 20>
+
 Need to have pandas and numpy installed in python 3.
 
 Restart and run all cells
