@@ -87,7 +87,7 @@ I leveraged the apriori algorithm to implement frequent item set identification.
  2. For all frequent individual items, build a candidate pair.
  3. Count number of transactions the candidate pair isin into **double_count** dictionary
  4. Prune double_count based on support_level to capture frequent pairs in **double_freq_items**
- 5. Capture the number of pairs each item is in as the second element of individual_items_count
+ 5. Capture the number of pairs each item isin as the second element of individual_items_count
  
  **To calculate frequency of triples**
  1. For an item to be in a frequent triple, it should be in *atleast two frequent pairs*   
@@ -95,48 +95,3 @@ I leveraged the apriori algorithm to implement frequent item set identification.
  2. Build candidate triples that satisfy this condition
  3. Prune triples based on support_level, to get frequent triples
  and so on for higher levels
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Efficiency considerations
-
-1.I read the entire data set into main memory to speed up the implementation. However, if the data set is huge, we could read one line at a time from disk, process to count frequency then go back and read next line.
-
-
-2.The time taken upto identification of frequent quadruples is within 3 mins on local machine. For five and over, it takes longer. The biggest time consumption here is to look through all candidate quads for each five group and check if they are a frequent quad. If we had a cluster and memory is not a constraint, this check could be avoided to speed up the algorithm.
-
