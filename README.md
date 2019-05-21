@@ -12,7 +12,7 @@ Change the data set path to directory where you clone
 ![](./Path_to_raw_dataset.PNG)
 
 Change the final output path to directory where you clone
-![](./
+![](./Path_to_resultset.PNG)
 Need to have pandas and numpy installed in python 3.
 
 Restart and run all cells
@@ -20,6 +20,7 @@ Restart and run all cells
 **To run with a different support level:**
 
  change the value of support_level = 4 to a new number and rerun all cells
+ 
 
 # Efficiency considerations
 
