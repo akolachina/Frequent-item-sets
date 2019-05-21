@@ -20,6 +20,8 @@ Need to have pandas and numpy installed in python 3.
 
 Restart and run all cells
 
+<img src = "./Running_code.PNG" width = 100>
+
 **To run with a different support level:**
 
  change the value of support_level = 4 to a new number and rerun all cells
