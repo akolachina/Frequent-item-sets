@@ -10,11 +10,11 @@ Open *"Frequent Itemsets-Ver4.ipynb"* in Jupyter Notebook
 
 Change the data set path to directory where you clone
 
-<img src = "./Path_to_raw_dataset.PNG width = 20">
+<img src = "./Path_to_raw_dataset.PNG width = 100">
 
 Change the final output path to directory where you clone
 
-<img src = "./Path_to_resultset.PNG" width = 20>
+<img src = "./Path_to_resultset.PNG" width = 100>
 
 Need to have pandas and numpy installed in python 3.
 
