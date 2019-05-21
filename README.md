@@ -1,12 +1,15 @@
 # Frequent-item-sets
 Python code to build frequent item sets from a transactions database where each line represents a transaction of items. Each item is represented as an integer and items are separated by space. A line that looks like: ‘1001 1002 1003' represents a single transaction consisting of products with SKUs 1001, 1002 and 1003.
 
+# Output file
+The output is stored in *"frequent_itemsets_final_output.csv"*
+
 # Instructions to run the code
 
 
 clone the repo: git clone https://github.com/akolachina/Frequent-item-sets.git
 
-Open *"Frequent Itemsets-Ver4.ipynb"* in Jupyter Notebook
+Open *"Frequent Itemsets-Ver5.ipynb"* in Jupyter Notebook
 
 Change the data set path to directory where you clone
 
