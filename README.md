@@ -22,6 +22,40 @@ Restart and run all cells
 
 2.The time taken upto identification of frequent quadruples is within 3 mins on local machine. For five and over, it takes longer. The biggest time consumption here is to look through all candidate quads for each five group and check if they are a frequent quad. If we had a cluster and memory is not a constraint, this check could be avoided to speed up the algorithm.
 
+3. The code here is in a PoC mode, in the interest of time. If the code had to be productionized and scaled up to build frequent itemsets from bigger databases and of different support levels, I would 
+* use *itertools.combinations(candidate_list, itemset_size)* to replace the nested *for-loops* in identifying candidate tuples
+   * for ex:
+   *for p in range(len(candidate_five_single)-4):
+   
+                for q in range(p+1,len(candidate_five_single)-3):
+                
+                    for r in range(q+1, len(candidate_five_single)-2):
+                    
+                        for l in range(r+1,len(candidate_five_single)-1):
+                        
+                            for m in range(r+1,len(candidate_five_single)):
+                            
+                                a = (candidate_five_single[p],candidate_five_single[q],candidate_five_single[r],candidate_five_single[l],candidate_five_single[m] )*
+    may be replaced by
+    
+    *for a in itertools.combinations(candidate_five_single,5): 
+        ""*
+* Create a function to identify candidate itemsets. The arguments to function would be a list of items and the item size. The function would return candidate tuples based on itemsize, using the *itertools.combinations()* feature described above
+
+* Wrap the functions in a while loop, so that the frequent itemset sizes of continuously bigger sizes are identified untill no more frequent itemsets are available.
+
+  * pseudo code:
+     
+     i = 1
+     build frequent itemset of size i
+       while (frequent itemset of size i is not null):
+            i+=1
+            build frequent itemset of size i
+       
+     
+
+                                
+                                
 
 
 
