@@ -48,8 +48,11 @@ Restart and run all cells
      
      i = 1
      build frequent itemset of size i
+     
        while (frequent itemset of size i is not null):
+       
             i+=1
+            
             build frequent itemset of size i
        
      
