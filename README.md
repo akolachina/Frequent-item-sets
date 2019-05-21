@@ -11,7 +11,7 @@ clone the repo: git clone https://github.com/akolachina/Frequent-item-sets.git
 
 Open *"Frequent Itemsets-Ver5.ipynb"* in Jupyter Notebook
 
-Change the data set path to directory where you clone
+Change the data set path to where it resides locally
 
 <img src = "./Path_to_raw_dataset.PNG" width = 400>
 
