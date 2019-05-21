@@ -26,6 +26,7 @@ Restart and run all cells
 
  change the value of support_level = 4 to a new number and rerun all cells
  
+ <img src = "./Change_support_level.PNG" width = 300>
 
 # Efficiency considerations
 
